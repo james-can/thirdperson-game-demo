@@ -344,6 +344,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1602659162}
     m_Modifications:
+    - target: {fileID: -6057140222963153312, guid: 7cc4c5402cd6f214fb1b9128d201cea4,
+        type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 1e6ed5d026a17fd47b9ef871fb88feb8, type: 3}
+    - target: {fileID: -6057140222963153312, guid: 7cc4c5402cd6f214fb1b9128d201cea4,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3458d8a03fe50854ca96e89a332b95c3, type: 2}
     - target: {fileID: -4216859302048453862, guid: 7cc4c5402cd6f214fb1b9128d201cea4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -424,7 +434,6 @@ GameObject:
   - component: {fileID: 1602659161}
   - component: {fileID: 1602659166}
   - component: {fileID: 1602659165}
-  - component: {fileID: 1602659164}
   - component: {fileID: 1602659163}
   m_Layer: 0
   m_Name: AvatarController
@@ -442,20 +451,13 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602659160}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 7cc4c5402cd6f214fb1b9128d201cea4, type: 3}
-  m_Controller: {fileID: 9100000, guid: 6ee239d5af66a764b81e0daa261f5a0d, type: 2}
+  m_Avatar: {fileID: 9000000, guid: 1e6ed5d026a17fd47b9ef871fb88feb8, type: 3}
+  m_Controller: {fileID: 9100000, guid: 3458d8a03fe50854ca96e89a332b95c3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
-    are already bound by a Humanoid avatar. These transforms can only be changed
-    by Humanoid clips.\n\tTransform 'Hips'\n\tTransform 'Spine1'\n\tTransform 'LeftHandMiddle2'\n\tTransform
-    'Neck'\n\tTransform 'LeftHandThumb1'\n\tTransform 'LeftHandRing2'\n\tTransform
-    'RightHandIndex3'\n\tTransform 'LeftHandRing3'\n\tTransform 'RightHandMiddle1'\n\tTransform
-    'LeftUpLeg'\n\tand more ...\n\tFrom animation clip 'Running'\n\tFrom animation
-    clip 'RunningLeft'\n\tFrom animation clip 'RunningRight'\n\tFrom animation clip
-    'mixamo.com'"
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -483,29 +485,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1602659160}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
+  m_Script: {fileID: 11500000, guid: cda259ff0a1326e4ab1d8536b200360b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1602659164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602659160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MovingTurnSpeed: 360
-  m_StationaryTurnSpeed: 180
-  m_JumpPower: 6
-  m_GravityMultiplier: 2
-  m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 1
-  m_AnimSpeedMultiplier: 1
-  m_GroundCheckDistance: 0.3
+  a: {fileID: 1602659161}
 --- !u!136 &1602659165
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -515,7 +498,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1602659160}
   m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.36779046
   m_Height: 1.8646369
   m_Direction: 1
@@ -532,7 +515,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -613,7 +596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1737731535}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
